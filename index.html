@@ -191,13 +191,31 @@
       .nav-btn { padding: 9px 13px; }
     }
   </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1427618225888876');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1427618225888876&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script>function trackTelegramClick(){if(typeof fbq==='function'){fbq('track','Lead');}}</script>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
     <div class="brand">Cheat Genius Store</div>
-    <a class="nav-btn" href="https://t.me/cheat_genius_store_bot">Open Bot</a>
+    <a class="nav-btn" href="https://t.me/cheat_genius_store_bot" onclick="trackTelegramClick()">Open Bot</a>
   </div>
 </header>
 
@@ -210,7 +228,7 @@
         Discover our Telegram store through a simple, fast and easy-to-use experience.
         Open the bot and explore what's available.
       </p>
-      <a class="cta" href="https://t.me/cheat_genius_store_bot">
+      <a class="cta" href="https://t.me/cheat_genius_store_bot" onclick="trackTelegramClick()">
         🚀 OPEN TELEGRAM BOT
       </a>
       <div class="small">@cheat_genius_store_bot</div>
@@ -270,7 +288,7 @@
     <section class="final">
       <h2>Ready to explore?</h2>
       <p>Open Cheat Genius Store directly in Telegram and get started.</p>
-      <a class="cta" href="https://t.me/cheat_genius_store_bot">
+      <a class="cta" href="https://t.me/cheat_genius_store_bot" onclick="trackTelegramClick()">
         🚀 OPEN TELEGRAM BOT
       </a>
     </section>
