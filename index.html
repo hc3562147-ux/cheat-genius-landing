@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheat Genius Store</title>
+  <meta name="description" content="Explore Cheat Genius Store through Telegram. Simple, fast and easy to use.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #f6f8fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+    .wrap { width: min(1100px, 92%); margin: auto; }
+
+    header {
+      padding: 22px 0;
+      background: rgba(255,255,255,.92);
+      border-bottom: 1px solid #e8ebf2;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -.4px;
+    }
+    .nav-btn {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: #229ed9;
+      color: white;
+    }
+
+    .hero {
+      padding: 82px 0 72px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(34,158,217,.14), transparent 38%),
+        #f6f8fc;
+    }
+    .badge {
+      display: inline-block;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: #e8f6fd;
+      color: #1479a8;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.05;
+      letter-spacing: -2.5px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #596579;
+      font-size: 18px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background: #229ed9;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-weight: 800;
+      box-shadow: 0 10px 25px rgba(34,158,217,.22);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(34,158,217,.28);
+    }
+    .small {
+      margin-top: 13px;
+      color: #7b8494;
+      font-size: 13px;
+    }
+
+    section { padding: 72px 0; }
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    .section-subtitle {
+      text-align: center;
+      color: #687386;
+      max-width: 650px;
+      margin: 0 auto 38px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e8ebf2;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(23,32,51,.05);
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #e8f6fd;
+      font-size: 23px;
+      margin-bottom: 18px;
+    }
+    .card h3 { margin-bottom: 8px; font-size: 20px; }
+    .card p { color: #687386; }
+
+    .steps { counter-reset: step; }
+    .step {
+      position: relative;
+      padding-left: 64px;
+      margin: 22px auto;
+      max-width: 700px;
+    }
+    .step:before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #229ed9;
+      color: white;
+      font-weight: 800;
+    }
+    .step h3 { margin-bottom: 4px; }
+    .step p { color: #687386; }
+
+    .final {
+      text-align: center;
+      padding: 76px 20px;
+      background: #172033;
+      color: white;
+      border-radius: 28px;
+      margin-bottom: 70px;
+    }
+    .final p {
+      color: #c8cfdb;
+      max-width: 620px;
+      margin: 12px auto 25px;
+    }
+
+    footer {
+      border-top: 1px solid #e8ebf2;
+      padding: 25px 0;
+      color: #7b8494;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 58px; }
+      section { padding: 55px 0; }
+      .section-title { font-size: 29px; }
+      .nav-btn { padding: 9px 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Cheat Genius Store</div>
+    <a class="nav-btn" href="https://t.me/cheat_genius_store_bot">Open Bot</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="badge">📲 Available on Telegram</div>
+      <h1>Explore Cheat Genius Store</h1>
+      <p>
+        Discover our Telegram store through a simple, fast and easy-to-use experience.
+        Open the bot and explore what's available.
+      </p>
+      <a class="cta" href="https://t.me/cheat_genius_store_bot">
+        🚀 OPEN TELEGRAM BOT
+      </a>
+      <div class="small">@cheat_genius_store_bot</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Why use the Telegram bot?</h2>
+      <p class="section-subtitle">
+        Everything is designed to be simple to navigate directly inside Telegram.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>Simple</h3>
+          <p>Easy navigation without unnecessary steps.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Telegram Based</h3>
+          <p>Access the store directly through Telegram.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🧭</div>
+          <h3>Easy to Explore</h3>
+          <p>Open the bot and browse the available options.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">How it works</h2>
+      <p class="section-subtitle">Get started in just a few simple steps.</p>
+
+      <div class="steps">
+        <div class="step">
+          <h3>Open the Telegram bot</h3>
+          <p>Tap the button and open @cheat_genius_store_bot.</p>
+        </div>
+        <div class="step">
+          <h3>Start the bot</h3>
+          <p>Press Start and follow the simple menu.</p>
+        </div>
+        <div class="step">
+          <h3>Explore what's available</h3>
+          <p>Browse the options available inside the Telegram store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="final">
+      <h2>Ready to explore?</h2>
+      <p>Open Cheat Genius Store directly in Telegram and get started.</p>
+      <a class="cta" href="https://t.me/cheat_genius_store_bot">
+        🚀 OPEN TELEGRAM BOT
+      </a>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 Cheat Genius Store · Telegram: @cheat_genius_store_bot
+  </div>
+</footer>
+
+</body>
+</html>
